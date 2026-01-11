@@ -1,0 +1,19 @@
+Candidate Profile (JSON):
+"""
+{profile_json}
+"""
+
+Search Criteria (User Query):
+"""
+{user_query}
+"""
+
+Evaluate how relevant this candidate is to the query.
+If the candidate fits even partially or is potentially interesting - answer true.
+If it is completely off (e.g. looking for a Java developer, but this is a marketer) - answer false.
+
+JSON Response Format:
+{{
+    "is_relevant": true/false,
+    "reason": "Brief reason for decision"
+}}

@@ -1,0 +1,39 @@
+Analyze the chat message.
+Determine: is this a message where a person INTRODUCES themselves and talks about themselves professionally?
+Signs of an introduction:
+
+The person states their name
+Says what they work as / what they do
+Indicates experience or company
+Leaves contact details
+Writes what they are looking for / interested in professionally
+
+Is NOT an introduction:
+
+Just a greeting without information about themselves
+Question to the group
+Comment on someone else's message
+Repost or forwarded message
+Job posting (not about themselves, but about a position)
+
+Message:
+"""
+{text}
+"""
+If this is an introduction - extract all data you can find.
+If NOT an introduction - return {{"is_introduction": false}}
+Response format (JSON only, no markdown):
+{{
+"is_introduction": true,
+"name": "First Last Name",
+"position": "Position/Role",
+"company": "Company or null if not specified",
+"experience_years": "X years or null",
+"location": "City/Country or null",
+"expertise": ["area1", "area2"],
+"looking_for": "what the person is looking for or null",
+"linkedin": "full URL or null",
+"telegram": "@username or null",
+"other_contacts": "other contacts or null",
+"summary": "short summary about the person in 1 sentence"
+}}

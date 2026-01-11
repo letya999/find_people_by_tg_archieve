@@ -1,0 +1,5 @@
+aiohttp
+openpyxl
+tqdm
+python-dotenv
+pandas
