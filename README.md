@@ -72,4 +72,4 @@ This tool automatically extracts professional profiles from chat history (Telegr
 
 ## License
 
-MIT
+[MIT](LICENSE)
