@@ -17,7 +17,7 @@ This tool automatically extracts professional profiles from chat history (Telegr
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/chat-profile-extractor.git
+    git clone https://github.com/letya999/find_people_by_tg_archieve.git
     cd chat-profile-extractor
     ```
 
