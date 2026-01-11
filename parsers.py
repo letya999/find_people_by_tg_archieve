@@ -54,7 +54,15 @@ class TelegramParser(BaseParser):
                         if isinstance(item, str):
                             full_text += item
                         elif isinstance(item, dict):
-                            full_text += item.get('text', '')
+                            text_val = item.get('text', '')
+                            if item.get('type') == 'text_link':
+                                href = item.get('href', '')
+                                if href:
+                                    full_text += f"[{text_val}]({href})"
+                                else:
+                                    full_text += text_val
+                            else:
+                                full_text += text_val
                 else:
                     full_text = str(text_content)
 
